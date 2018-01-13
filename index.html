@@ -53,45 +53,49 @@
     </ul>
   </aside>
   <section class="content">
-    <header>
-      <div class="notification">
-        <i></i>
-      </div>
+    <header class="profile-content">
+      <img class="notification" src="./assets/images/icon-bell.png" alt="Notificaciones" />
       <div class="profile">
-        <img src="" alt="" />
-        <span>Administrador</span>
-        <i></i>
+        <img class="profile-picture" src="./assets/images/profile.png" alt="Foto de perfil" />
+        <span class="profile-name">Administrador</span>
+        <img class="icon" src="./assets/icons/dropdown-down.svg" alt="Icono" />
       </div>
     </header>
-    <section>
+    <section class="view-title">
       <h2>Bienvenido a Runa</h2>
-      <p>Completa todo el siguiente proceso</p>
+      <p class="tagline">Completa todo el siguiente proceso</p>
     </section>
-    <section>
-      <article>
-        <div class="bar-step bar--active"></div>
-        <span>1. Información básica</span>
-      </article>
-      <article>
-        <div class="bar-step bar--active"></div>
-        <span>2. Configuración</span>
-      </article>
-      <article>
-        <div class="bar-step"></div>
-        <span>3. Plan & Pagos</span>
-      </article>
-      <article>
-        <div class="bar-step"></div>
-        <span>4. Migración de datos</span>
-      </article>
-    </section>
+    <nav class="steps">
+      <ul>
+        <li>
+          <div class="bar-step bar--active"></div>
+          <span>1. Información básica</span>
+        </li>
+        <li>
+          <div class="bar-step bar--active"></div>
+          <span>2. Configuración</span>
+        </li>
+        <li>
+          <div class="bar-step"></div>
+          <span>3. Plan & Pagos</span>
+        </li>
+        <li>
+          <div class="bar-step"></div>
+          <span>4. Migración de datos</span>
+        </li>
+      </ul>
+    </nav>
     <form action="">
       <section class="card">
         <div class="form-group">
           <h3>Empleados</h3>
           <div class="form-item">
             <label for="">Agregar usuarios</label>
-            <input type="text" />
+            <select name="selector">
+              <option value="item1">Item 1</option>
+              <option value="item2">Item 2</option>
+              <option value="item3">Item 3</option>
+            </select>
           </div>
           <div class="form-item">
             <label for="">Motivo por tardanza</label>
@@ -104,51 +108,59 @@
             <label for="">Tiempo de anticipación para solicitar vacaciones</label>
             <input type="text" />
           </div>
-          <div class="form-item">
+          <div class="form-item item-checkbox">
             <div class="checkbox">
-              <input type="checkbox" />
-              <label for=""></label>
+              <input type="checkbox" id="checkbox1" />
+              <label for="checkbox1"></label>
             </div>
-            <label for="">Permitir a los jefes de área aprobar solicitudes</label>
+            <label class="label-checkbox" for="checkbox1">Permitir a los jefes de área aprobar solicitudes</label>
           </div>
         </div>
         <div class="form-group">
           <h3>Horario</h3>
-          <div class="form-item">
+          <div class="form-item select-time">
             <div class="radio-button">
-              <input type="radio" />
-              <label for=""></label>
+              <input type="radio" id="radio1" name="option1" />
+              <label for="radio1"></label>
+            </div>
+            <div class="form-item">
+              <label for="">Desde</label>
+              <input type="time" />
+            </div>
+            <div class="form-item">
+              <label for="">Hasta</label>
+              <input type="time" />
             </div>
           </div>
           <div class="form-item">
             <div class="radio-button">
-              <input type="radio" />
-              <label for=""></label>
+              <input type="radio" id="radio2" name="option1" />
+              <label for="radio2"></label>
             </div>
-            <label for="">El horario es flexible</label>
+            <label class="label-checkbox"  for="radio2">El horario es flexible</label>
           </div>
         </div>
         <div class="form-group">
           <h3>Correos y notificaciones</h3>
-          <div class="form-item">
+          <div class="form-item item-checkbox">
             <div class="checkbox">
-              <input type="checkbox" />
-              <label for=""></label>
+              <input type="checkbox" id="checkbox2" />
+              <label for="checkbox2"></label>
             </div>
-            <label for="">Enviar notificaciones por cumpleaños</label>
+            <label class="label-checkbox" for="checkbox2">Enviar notificaciones por cumpleaños</label>
           </div>
-          <div class="form-item">
+          <div class="form-item item-checkbox">
             <div class="checkbox">
-              <input type="checkbox" />
-              <label for=""></label>
+              <input type="checkbox" id="checkbox3" />
+              <label for="checkbox3"></label>
             </div>
-            <label for="">Recibir resumen de reporte...</label>
+            <label class="label-checkbox" for="checkbox3">Recibir resumen de reporte...</label>
           </div>
         </div>
       </section>
-      <section>
-        <button>Guardar</button>
-        <button>Continuar</button>
+      <section class="button-container">
+        <button class="button secondary-button">Guardar</button>
+        <button class="button primary-button">Continuar</button>
       </section>
     </form>
   </section>
