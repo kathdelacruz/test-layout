@@ -5,38 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Runa</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-  <aside>
-    <div>LOGO</div>
-    <ul>
+<body class="container">
+  <aside class="menu">
+    <img class="logo" src="./assets/images/logo-runa.svg" alt="Runa" />
+    <ul class="menu-items">
       <li>
-        <i></i>
-        <span>Dashboard</span>
-      </li>
-      <li>
-        <i></i>
-        <span>Nóminas</span>
-      </li>
-      <li class="item-dropdown">
-        <i></i>
-        <span>Empleados</span>
-      </li>
-      <li class="item-dropdown">
-        <i></i>
-        <span>Tiempo</span>
-      </li>
-      <li class="item-dropdown">
-        <i></i>
-        <span>Reportes</span>
+        <div class="icon-wrapper">
+          <img class="icon" src="./assets/icons/icon-dashboard.svg" alt="Icono" />
+        </div>
+        <span class="item-title">Dashboard</span>
       </li>
       <li>
-        <i></i>
-        <span>Ayuda</span>
+        <div class="icon-wrapper">
+          <img class="icon" src="./assets/icons/icon-nominas.svg" alt="Icono" />
+        </div>
+        <span class="item-title">Nóminas</span>
+      </li>
+      <li class="item-dropdown">
+        <div class="icon-wrapper">
+          <img class="icon" src="./assets/icons/icon-empleados.svg" alt="Icono" />
+        </div>
+        <span class="item-title">Empleados</span>
+        <img src="./assets/icons/dropdown-right.svg" alt="Icono">
+      </li>
+      <li class="item-dropdown">
+        <div class="icon-wrapper">
+          <img class="icon" src="./assets/icons/icon-tiempo.svg" alt="Icono" />
+        </div>
+        <span class="item-title">Tiempo</span>
+        <img src="./assets/icons/dropdown-right.svg" alt="Icono">
+      </li>
+      <li class="item-dropdown">
+        <div class="icon-wrapper">
+          <img class="icon" src="./assets/icons/icon-reportes.svg" alt="Icono" />
+        </div>
+        <span class="item-title">Reportes</span>
+        <img src="./assets/icons/dropdown-right.svg" alt="Icono">
+      </li>
+      <li>
+        <div class="icon-wrapper">
+          <img class="icon" src="./assets/icons/icon-ayuda.svg" alt="Icono" />
+        </div>
+        <span class="item-title">Ayuda</span>
       </li>
     </ul>
   </aside>
-  <section class="container">
+  <section class="content">
     <header>
       <div class="notification">
         <i></i>
